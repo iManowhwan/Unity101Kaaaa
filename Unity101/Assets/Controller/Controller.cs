@@ -20,22 +20,22 @@ public class Controller : MonoBehaviour
 
         if(Input.GetKey(KeyCode.W) == true)
         {
-            transform.position = new Vector3(0, transform.position.y + 0.001f, 0);
+            transform.position = new Vector3(transform.position.x, transform.position.y + 0.001f, 0);
         }
 
         if (Input.GetKey(KeyCode.S) == true)
         {
-            transform.position = new Vector3(0, transform.position.y + -0.001f, 0);
+            transform.position = new Vector3(transform.position.x, transform.position.y + -0.001f, 0);
         }
 
         if (Input.GetKey(KeyCode.A) == true)
         {
-            transform.position = new Vector3(transform.position.x + -0.001f, 0, 0);
+            transform.position = new Vector3(transform.position.x + -0.001f, transform.position.y, 0);
         }
 
         if (Input.GetKey(KeyCode.D) == true)
         {
-            transform.position = new Vector3(transform.position.x + 0.001f, 0, 0);
+            transform.position = new Vector3(transform.position.x + 0.001f, transform.position.y, 0);
         }
     }
 }
